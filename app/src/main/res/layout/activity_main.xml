@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".ui.main.MainActivity">
+
+    <TextView
+        android:id="@+id/tv_instagram_lite"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="8dp"
+        android:alpha="0"
+        android:gravity="center_vertical"
+        android:text="@string/app_name"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/action_logout"
+        app:layout_constraintEnd_toStartOf="@+id/switch_location_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/switch_location_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:alpha="0"
+        android:text="@string/switch_location"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/action_location"
+        app:layout_constraintEnd_toStartOf="@id/action_location"
+        app:layout_constraintTop_toTopOf="@+id/action_location" />
+
+    <com.google.android.material.switchmaterial.SwitchMaterial
+        android:id="@+id/action_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:alpha="0"
+        app:layout_constraintBottom_toBottomOf="@id/action_map"
+        app:layout_constraintEnd_toStartOf="@+id/action_map"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/action_map"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginEnd="8dp"
+        android:alpha="0"
+        android:background="@null"
+        android:contentDescription="@string/map_button"
+        android:src="@drawable/baseline_map_24"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_instagram_lite"
+        app:layout_constraintEnd_toStartOf="@id/action_logout"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="?attr/colorOnBackground" />
+
+    <ImageButton
+        android:id="@+id/action_logout"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:alpha="0"
+        android:background="@null"
+        android:contentDescription="@string/logout_button"
+        android:src="@drawable/baseline_logout_24"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_instagram_lite"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="?attr/colorOnBackground" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_instagram_lite"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:alpha="0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/tv_instagram_lite"
+        app:layout_constraintTop_toBottomOf="@+id/tv_instagram_lite"
+        tools:listitem="@layout/story_item" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_add_story_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:alpha="0"
+        android:contentDescription="@string/add_story_button"
+        android:src="@drawable/ic_add"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

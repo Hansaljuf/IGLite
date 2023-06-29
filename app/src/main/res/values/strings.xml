@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">IGLite</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="name">Name</string>
+    <string name="image">image</string>
+    <string name="add_story_button">Add Story Button</string>
+    <string name="detail_picture">Gambar Detail</string>
+    <string name="logout_button">Logout button</string>
+    <string name="map_button">Map button</string>
+    <string name="camera">Camera</string>
+    <string name="gallery">Gallery</string>
+    <string name="upload">Upload</string>
+    <string name="preview_image">Preview Image</string>
+    <string name="add_description">Description</string>
+    <string name="error_message_add_story">Image cannot be empty</string>
+    <string name="instagram_lite_login">Instagram Lite Login</string>
+    <string name="instagram_lite_register">Instagram Lite Register</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="switch_location">Lokasi</string>
+</resources>
